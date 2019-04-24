@@ -1,6 +1,14 @@
+:root{
+    --black-green: #293033;
+    --dark-green: #293033;
+    --green: #24B383;
+    --light-green: #62D9B1;
+    --white-green: #E6F2EE;
+    --linear-gradient-black-green: linear-gradient(to bottom, #293033 0%, #293033 100%);
+}
 body{
-    font-family: 'Open-sans', sans-serif;
-    background-color: #101214;
+    font-family: 'Merriweather', sans-serif;
+    background: var(--linear-gradient-black-green);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -9,7 +17,12 @@ body{
     height: 100%;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 a{
-    color: #ffffff;
+    color: var(--white-green);
     text-decoration: none;
 }
