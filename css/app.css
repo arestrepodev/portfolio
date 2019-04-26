@@ -1,3 +1,4 @@
+/* Base */
 :root{
     --black-green: #293033;
     --dark-green: #293033;
@@ -7,7 +8,7 @@
     --linear-gradient-black-green: linear-gradient(to bottom, #293033 0%, #293033 100%);
 }
 body{
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Lato', sans-serif;
     background: var(--linear-gradient-black-green);
     color: #ffffff;
     display: flex;
@@ -15,6 +16,8 @@ body{
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    margin: 0;
+    padding: 0 1rem;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -25,4 +28,42 @@ h1,h2,h3,h4,h5,h6{
 a{
     color: var(--white-green);
     text-decoration: none;
+}
+
+i{
+    font-size: 30px;
+}
+
+p{
+    line-height: 1.6;
+}
+
+/* Layout */
+.Container{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.Titles h1,
+.Titles h2{
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+@media screen and (max-width: 650px){
+    .Header{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+        padding-bottom: 1rem;
+    }
+
 }
