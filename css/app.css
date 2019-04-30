@@ -59,9 +59,26 @@ ul{line-height: 1.3;}
 }
 
 .Social{padding: 0 0 1rem 0;}
+.Social-links {
+    display: flex;
+    align-items: center;
+}
 .Social-links i {
     font-size: 2rem;
     padding: 0 .2rem;
+}
+.btnCV{
+    background: var(--white-green);
+    padding: .4rem 1rem;
+    color: var(--black-green);
+    font-weight: bold;
+    border-radius: 2px;
+    transition: all 90ms ease-in-out;
+}
+
+.btnCV:hover{
+    background: var(--light-green);
+    border: var(--black-green);
 }
 
 /* Media Queries */
