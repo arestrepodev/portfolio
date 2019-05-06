@@ -113,9 +113,9 @@ ul{line-height: 1.3;}
     transition: all 500ms ease;
 }
 
-.Experience-card:hover{
-    background: var(--linear-gradient-light-green);
-}
+.Experience-card-portfolio:nth-child(n+3){ margin-top: .8rem; }
+
+.Experience-card:hover{ background: var(--linear-gradient-light-green);}
 
 .Experience-card-img{
     width: 100%;
@@ -130,9 +130,8 @@ ul{line-height: 1.3;}
     font-weight: bold;
 }
 
-.Experience-card-title{ 
-    margin: 0 0 .5rem 0 ;
-}
+.Experience-card-title{ margin: 0 0 .5rem 0 ; }
+
 .Experience-card-date{
     margin: 0;
     font-size: 14px;
@@ -165,11 +164,11 @@ ul{line-height: 1.3;}
 
     .Experience-card-container{
         grid-template-columns: 1fr;
-        grid-gap: 1rem;
+        grid-gap: 0;
     }
 
     .Experience-card{margin: 0}
-    .Experience-card:last-child{margin-bottom: 1rem;}
+    .Experience-card:last-child{ margin-bottom: 1rem; }
 }
 
 
@@ -186,9 +185,7 @@ ul{line-height: 1.3;}
 }
 
 @media screen and (max-width: 450px){
-    .Header{
-        justify-items: start;
-    }
+    .Header{ justify-items: start; }
     .Skills{ grid-template-columns: 1fr; }
 }
 
