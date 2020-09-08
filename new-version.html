@@ -75,16 +75,67 @@
   </head>
   <body>
     <div class="Wrapper">
-      <section class="Resume">
-        <header class="Header"></header>
-        <article class="Skills"></article>
+      <section class="Resume" id="Resume">
+        <header class="Header">
+          <img
+            class="Profile"
+            src="./img/profile-arnold-restrepo.jpg"
+            alt="Foto de Perfil de Arnold Restrepo Hernandez"
+            width="122"
+          />
+          <div class="Header__titles">
+            <h1 class="Header__title">Arnold Restrepo Hernandez</h1>
+            <p class="Header__subtitle">Frontend - React Developer</p>
+          </div>
+          <div class="Metrics">
+            <div class="Metrics__item">
+              <h3 class="Metrics__title">611</h3>
+              <p class="Metrics__text">Contribuciones a Github y Gitlab</p>
+            </div>
+            <div class="Metrics__item">
+              <h3 class="Metrics__title">4</h3>
+              <p class="Metrics__text">Años de Experiencia</p>
+            </div>
+            <div class="Metrics__item">
+              <h3 class="Metrics__title">6</h3>
+              <p class="Metrics__text">Grandes Proyectos</p>
+            </div>
+          </div>
+        </header>
+        <article class="Skills">
+          <article class="Skills__section">
+            <h3 class="Skills__title">Soft Skills:</h3>
+            <ul class="Skills__list">
+              <li class="Skills__item">Escuchar</li>
+              <li class="Skills__item">Comunicación</li>
+              <li class="Skills__item">Adaptación</li>
+              <li class="Skills__item">Trabajo en Equipo</li>
+              <li class="Skills__item">Aprendizaje Continuo</li>
+              <li class="Skills__item">Negociación</li>
+            </ul>
+          </article>
+          <article class="Skills__section">
+            <h3 class="Skills__title">Hard Skills:</h3>
+            <ul class="Skills__list">
+              <li class="Skills__item">React, Redux, Redux Saga, GraphQL</li>
+              <li class="Skills__item">HTML5, CSS3, JavaScript</li>
+              <li class="Skills__item">Sass, Less, Stylus</li>
+              <li class="Skills__item">Rest API</li>
+              <li class="Skills__item">UI Design</li>
+              <li class="Skills__item">Wireframing</li>
+              <li class="Skills__item">Interaction Design</li>
+              <li class="Skills__item">Git, Github, Gitlab</li>
+              <li class="Skills__item">Node JS</li>
+            </ul>
+          </article>
+        </article>
         <article class="Contact"></article>
       </section>
-      <section class="About">
+      <section class="About" id="About">
         <article class="Me"></article>
         <article class="Hobbies"></article>
       </section>
-      <section class="Projects">
+      <section class="Projects" id="Projects">
         <article class="Featured"></article>
         <article class="OtherProjects"></article>
         <article class="LetsWork"></article>
@@ -93,20 +144,25 @@
     <nav class="Menu">
       <ul class="Menu__list">
         <li class="Menu__item">
-          <a href="#" title="Home" class="Menu__link" aria-label="Inicio">
+          <a href="#Resume" title="Home" class="Menu__link" aria-label="Inicio">
             <i class="fa fa-home Menu__icon"></i>
             <span class="Menu__title">Inicio</span>
           </a>
         </li>
         <li class="Menu__item">
-          <a href="#" title="Acerca" class="Menu__link" aria-label="Acerca">
+          <a
+            href="#About"
+            title="Acerca"
+            class="Menu__link"
+            aria-label="Acerca"
+          >
             <i class="fa fa-user Menu__icon"></i>
             <span class="Menu__title">Acerca</span>
           </a>
         </li>
         <li class="Menu__item">
           <a
-            href="#"
+            href="#Projects"
             title="Proyectos"
             class="Menu__link"
             aria-label="Trabajos"

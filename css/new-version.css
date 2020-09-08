@@ -10,11 +10,28 @@
   --font: 'Roboto', -apple-system, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: var(--darkgreen);
+}
+
 body {
   font-family: var(--font);
   margin: 0;
   padding: 0;
-  background: #dedede;
+  background: var(--white);
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .Wrapper {
@@ -25,8 +42,28 @@ body {
   grid-template-columns: repeat(1fr, 5);
 }
 
+/**
+* Resume 
+*/
+
 .Resume {
-  background: rgba(0, 0, 0, 0.1);
+  background: #dedede;
+}
+
+.Header {
+  background: var(--softyellow);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Profile {
+  width: 122px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid var(--darkgreen);
 }
 
 /* Hide Menu in Desktop and Tablets*/
@@ -45,6 +82,7 @@ body {
   .Wrapper {
     position: relative;
     grid-template-columns: 1fr;
+    padding-bottom: 180px;
   }
 
   /* Show Menu in Mobile */
