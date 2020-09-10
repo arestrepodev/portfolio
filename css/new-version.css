@@ -22,6 +22,25 @@ h6 {
   color: var(--darkgreen);
 }
 
+h1 {
+  font-size: 2.488rem;
+}
+h2 {
+  font-size: 2.074rem;
+}
+h3 {
+  font-size: 1.728rem;
+}
+h4 {
+  font-size: 1.44rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1rem;
+}
+
 body {
   font-family: var(--font);
   margin: 0;
@@ -59,11 +78,36 @@ img {
   justify-content: center;
 }
 
+.Header__title {
+  text-align: center;
+}
+
+.Header__subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 .Profile {
   width: 122px;
   height: auto;
   border-radius: 50%;
   border: 4px solid var(--darkgreen);
+}
+
+.Metrics {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Metrics__title {
+  text-align: center;
+}
+
+.Metrics__text {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0;
 }
 
 /* Hide Menu in Desktop and Tablets*/
