@@ -10,6 +10,10 @@
   --font: 'Roboto', -apple-system, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -55,10 +59,12 @@ img {
 
 .Wrapper {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
   grid-template-columns: repeat(1fr, 5);
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(300px);
 }
 
 /**
@@ -66,7 +72,8 @@ img {
 */
 
 .Resume {
-  background: #dedede;
+  /* background: #dedede; */
+  border-right: 1px solid var(--lightgray);
 }
 
 .Header {
@@ -110,13 +117,61 @@ img {
   margin-top: 0;
 }
 
+/*
+* Skills 
+*/
+.Skills {
+  padding: 1rem;
+}
+
+.Skills__item {
+  line-height: 1.4;
+}
+
+/*
+* Contact 
+*/
+
+.Contact {
+  padding: 1rem;
+}
+
+.Contact__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.Contact__link {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: var(--darkgreen);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--white);
+}
+.Contact__link:hover {
+  background: var(--lightgreen);
+}
+
+.Contact__icon {
+  font-size: 1.5rem;
+}
+
 /* Hide Menu in Desktop and Tablets*/
 .Menu {
   display: none;
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   .Wrapper {
     grid-template-columns: 1fr 1fr 2fr;
   }
