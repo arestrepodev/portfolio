@@ -19,6 +19,11 @@
     #62d9b1 100%
   );
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background: var(--soft-yellow);
@@ -102,7 +107,31 @@ img {
   grid-template-columns: auto 1fr auto;
   grid-gap: 0 2rem;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem 0 3rem 0;
+}
+
+.Nav {
+  margin-bottom: 2rem;
+}
+
+.Nav__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Nav__list__link {
+  font-size: 1.2rem;
+  transition: all ease-in 150ms;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+}
+
+.Nav__list__link:hover {
+  color: var(--soft-yellow);
+  background: var(--black-blue);
 }
 
 .Profile {
