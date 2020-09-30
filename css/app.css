@@ -95,6 +95,10 @@ img {
   height: auto;
 }
 
+a:focus {
+  outline: 4px solid var(--light-green);
+}
+
 /* Layout */
 .Container {
   max-width: 850px;
@@ -129,7 +133,9 @@ img {
   border-radius: 8px;
 }
 
-.Nav__list__link:hover {
+.Nav__list__link:hover,
+.Nav__list__link:active,
+.Nav__list__link:focus {
   color: var(--soft-yellow);
   background: var(--black-blue);
 }
