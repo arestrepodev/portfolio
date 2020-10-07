@@ -115,22 +115,19 @@ a:focus {
 }
 
 .Nav {
+  width: 100%;
   margin-bottom: 2rem;
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
 }
-
-.Nav__list {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .Nav__list__link {
+  display: inline-block;
   font-size: 1.2rem;
   transition: all ease-in 150ms;
   padding: 0.8rem 1rem;
   border-radius: 8px;
+  margin: 0 12px;
 }
 
 .Nav__list__link:hover,
@@ -311,6 +308,18 @@ a:focus {
   }
   .Logo-img {
     width: 60px;
+  }
+
+  .Nav {
+    width: 100%;
+    margin: 0;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50%;
+  }
+
+  .Nav__list__link {
+    margin: 1rem;
+    scroll-snap-align: start;
   }
 
   .Profile {
