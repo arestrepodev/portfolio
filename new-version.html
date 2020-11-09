@@ -42,6 +42,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- SlideShow -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/32df0df30a.js"
@@ -64,6 +69,7 @@
     />
     <!-- Styles -->
     <link rel="stylesheet" href="css/new-version.css" />
+
     <!-- Theme Color -->
     <meta name="theme-color" content="#293033" />
 
@@ -221,20 +227,60 @@
           </p>
         </article>
         <article class="Hobbies">
-          <h3>Mis Hobbies</h3>
-          <p>
+          <h3 class="Hobbies__title">Mis Hobbies</h3>
+          <p class="Hobbies__description">
             Aparte del desarrollo web, soy un apasionado del Arte, en mis
             tiempos libres contribuyo como guitarrista en @cronicamusic, además
             hago un poco de video y fotografía.
           </p>
-          <ul>
-            <li>
-              <img src="#" alt="Card Hobbie" />
-              <h4>Música</h4>
-              <p>
-                Tengo 2 proyectos musicales @cronicamusic y @arnoldrestrepomusic
-              </p>
-              <a href="#">Ver Más</a>
+          <ul
+            class="Hobbies__list js-flickity"
+            data-flickity-options='{ "cellAlign": "center", "contain": false }'
+          >
+            <li class="Hobbies__item gallery-cell">
+              <img
+                class="Hobbies__img"
+                src="https://picsum.photos/id/1/300/200"
+                alt="Card Hobbie"
+              />
+              <div class="Hobbies__body">
+                <h4 class="Hobbies__subtitle">Música</h4>
+                <p class="Hobbies__content">
+                  Tengo 2 proyectos musicales @cronicamusic y
+                  @arnoldrestrepomusic
+                </p>
+                <a href="#" class="Hobbies__link">Ver Más</a>
+              </div>
+            </li>
+            <li class="Hobbies__item gallery-cell">
+              <img
+                class="Hobbies__img"
+                src="https://picsum.photos/id/1/300/200"
+                alt="Card Hobbie"
+              />
+              <div class="Hobbies__body">
+                <h4 class="Hobbies__subtitle">Música</h4>
+                <p class="Hobbies__content">
+                  Tengo 2 proyectos musicales @cronicamusic y
+                  @arnoldrestrepomusic
+                </p>
+                <a href="#" class="Hobbies__link">Ver Más</a>
+              </div>
+            </li>
+            <li class="Hobbies__item gallery-cell">
+              <img
+                class="Hobbies__img"
+                src="https://picsum.photos/id/1/300/200"
+                alt="Card Hobbie"
+              />
+              <div class="Hobbies__body">
+                <h4 class="Hobbies__subtitle">Música</h4>
+                <p class="Hobbies__content">
+                  Tengo 2 proyectos musicales @cronicamusic y
+                  @arnoldrestrepomusic
+                </p>
+                <a href="#" class="Hobbies__link">Ver Más</a>
+              </div>
             </li>
           </ul>
         </article>
@@ -277,5 +323,8 @@
         </li>
       </ul>
     </nav>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

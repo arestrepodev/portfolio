@@ -71,6 +71,11 @@ img {
   scroll-snap-points-y: repeat(300px);
 }
 
+/* Hide Menu in Desktop and Tablets*/
+.Menu {
+  display: none;
+}
+
 /**
 * Resume 
 */
@@ -137,7 +142,7 @@ img {
 */
 
 .Contact {
-  padding: 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .Contact__list {
@@ -147,6 +152,10 @@ img {
   justify-content: space-evenly;
   margin: 0;
   padding: 0;
+}
+
+.Contact__title {
+  margin-top: 0;
 }
 
 .Contact__link {
@@ -175,12 +184,44 @@ img {
 
 .About {
   padding: 1rem 2rem;
-  background: peru;
+  border-right: 1px solid var(--lightgray);
+  /* background: peru; */
 }
 
-/* Hide Menu in Desktop and Tablets*/
-.Menu {
-  display: none;
+/* Hobbies */
+.Hobbies {
+  padding: 1rem 0;
+}
+
+.Hobbies__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Hobbies__item {
+  border-radius: 8px;
+  background-color: var(--softyellow);
+  border: 2px solid var(--lightgreen);
+}
+
+.Hobbies__subtitle {
+  margin-top: 0;
+}
+
+.Hobbies__body {
+  padding: 0.8rem;
+}
+
+.Hobbies__link {
+  font-family: var(--font-title);
+  background-color: var(--darkgreen);
+  color: var(--softyellow);
+  padding: 0.5rem 0.9rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 /* Media Queries */
