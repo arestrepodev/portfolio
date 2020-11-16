@@ -193,27 +193,27 @@ img {
   padding: 1rem 0;
 }
 
-.Hobbies__list {
+.Card__list {
   padding: 0;
-  margin: 3rem 0 0 0;
+  margin: 1rem 0 0 0;
   list-style: none;
 }
 
-.Hobbies__item {
+.Card__item {
   border-radius: 8px;
   background-color: var(--softyellow);
   border: 2px solid var(--lightgreen);
 }
 
-.Hobbies__subtitle {
+.Card__subtitle {
   margin-top: 0;
 }
 
-.Hobbies__body {
+.Card__body {
   padding: 0.8rem;
 }
 
-.Hobbies__link {
+.Card__link {
   font-family: var(--font-title);
   background-color: var(--darkgreen);
   color: var(--softyellow);
@@ -224,35 +224,49 @@ img {
   font-size: 1rem;
 }
 
-.gallery-cell {
+/* Projects */
+.Projects {
+  padding: 1rem 2rem;
+}
+
+/* Slideshow Settings */
+
+.Hobbies-cell {
   width: 80%; /* full width */
   height: 360px; /* height of carousel */
   margin: 0 10px;
   padding: 1rem;
 }
 
-/* smaller, dark, rounded square */
-.flickity-button {
-  background: #333;
-}
-.flickity-button:hover {
-  background: #f90;
+.Projects-cell {
+  width: 33%;
+  height: 430px;
+  margin: 0 1rem;
+  left: 30px;
 }
 
-.flickity-prev-next-button {
+/* smaller, dark, rounded square */
+.Hobbies .flickity-button {
+  background: #333;
+}
+.Hobbies .flickity-button:hover {
+  background: rgb(201, 198, 194);
+}
+
+.Hobbies .flickity-prev-next-button {
   width: 30px;
   height: 30px;
   border-radius: 5px;
 }
 /* icon color */
-.flickity-button-icon {
+.Hobbies .flickity-button-icon {
   fill: white;
 }
 /* position outside */
-.flickity-prev-next-button.previous {
+.Hobbies .flickity-prev-next-button.previous {
   left: -25px;
 }
-.flickity-prev-next-button.next {
+.Hobbies .flickity-prev-next-button.next {
   right: -25px;
 }
 

@@ -234,59 +234,115 @@
             hago un poco de video y fotografía.
           </p>
           <ul
-            class="Hobbies__list js-flickity"
+            class="Card__list js-flickity"
             data-flickity-options='{ "cellAlign": "center", "contain": false }'
           >
-            <li class="Hobbies__item gallery-cell">
+            <li class="Card__item Hobbies-cell">
               <img
-                class="Hobbies__img"
+                class="Card__img"
                 src="https://picsum.photos/id/1/300/200"
                 alt="Card Hobbie"
               />
-              <div class="Hobbies__body">
-                <h4 class="Hobbies__subtitle">Música</h4>
-                <p class="Hobbies__content">
+              <div class="Card__body">
+                <h4 class="Card__subtitle">Música</h4>
+                <p class="Card__content">
                   Tengo 2 proyectos musicales @cronicamusic y
                   @arnoldrestrepomusic
                 </p>
-                <a href="#" class="Hobbies__link">Ver Más</a>
+                <a href="#" class="Card__link">Ver Más</a>
               </div>
             </li>
-            <li class="Hobbies__item gallery-cell">
+            <li class="Card__item Hobbies-cell">
               <img
-                class="Hobbies__img"
+                class="Card__img"
                 src="https://picsum.photos/id/1/300/200"
                 alt="Card Hobbie"
               />
-              <div class="Hobbies__body">
-                <h4 class="Hobbies__subtitle">Música</h4>
-                <p class="Hobbies__content">
+              <div class="Card__body">
+                <h4 class="Card__subtitle">Música</h4>
+                <p class="Card__content">
                   Tengo 2 proyectos musicales @cronicamusic y
                   @arnoldrestrepomusic
                 </p>
-                <a href="#" class="Hobbies__link">Ver Más</a>
+                <a href="#" class="Card__link">Ver Más</a>
               </div>
             </li>
-            <li class="Hobbies__item gallery-cell">
+            <li class="Card__item Hobbies-cell">
               <img
-                class="Hobbies__img"
+                class="Card__img"
                 src="https://picsum.photos/id/1/300/200"
                 alt="Card Hobbie"
               />
-              <div class="Hobbies__body">
-                <h4 class="Hobbies__subtitle">Música</h4>
-                <p class="Hobbies__content">
+              <div class="Card__body">
+                <h4 class="Card__subtitle">Música</h4>
+                <p class="Card__content">
                   Tengo 2 proyectos musicales @cronicamusic y
                   @arnoldrestrepomusic
                 </p>
-                <a href="#" class="Hobbies__link">Ver Más</a>
+                <a href="#" class="Card__link">Ver Más</a>
               </div>
             </li>
           </ul>
         </article>
       </section>
       <section class="Projects" id="Projects">
-        <article class="Featured"></article>
+        <h2 class="Projects__title">Proyectos</h2>
+        <hr />
+        <article class="Featured">
+          <h4 class="Feature__title">Destacados:</h4>
+          <ul
+            class="Card__list js-flickity"
+            data-flickity-options='{ "cellAlign": "left", "contain": false, "adaptiveHeight": true, "resize": false }'
+          >
+            <li class="Card__item Projects-cell">
+              <img
+                class="Card__img"
+                src="./img/mapfre-blog-portafolio.jpg"
+                alt="Card Hobbie"
+              />
+              <div class="Card__body">
+                <h4 class="Card__subtitle">Mapfre Blog</h4>
+                <p class="Card__content">
+                  Crear un gestor de contenido tipo Blog con una experiencia
+                  nueva en el tema de los seguros fue un reto dificil, pero
+                  gracias a las ventajas de WordPress pudimos hacerlo realidad
+                  para Mapfre Seguros Colombia.
+                </p>
+                <a href="#" class="Card__link">Ver Más</a>
+              </div>
+            </li>
+            <li class="Card__item Projects-cell">
+              <img
+                class="Card__img"
+                src="img/servientrega-international-portafolio.jpg"
+                alt="Card Hobbie"
+              />
+              <div class="Card__body">
+                <h4 class="Card__subtitle">Servientrega Internacional</h4>
+                <p class="Card__content">
+                  Este fue un proyecto complicado a nivel de experiencia del
+                  cliente, se creo en WordPress a partir de una plantilla
+                  customizada, se agregaron complementos y plugins especiales
+                  enfocados al monitoreo de pedidos.
+                </p>
+                <a href="#" class="Card__link">Ver Más</a>
+              </div>
+            </li>
+            <li class="Card__item Projects-cell">
+              <img class="Card__img" src="img/petgram.jpg" alt="Card Hobbie" />
+              <div class="Card__body">
+                <h4 class="Card__subtitle">Enbiciporcolombia</h4>
+                <p class="Card__content">
+                  Usando React, Reach Router y algo de Styled Components, logré
+                  representar un gran emprendimiento para viajar en tu bici por
+                  colombia, fueron muchos retos de diseño, de estructura y de
+                  contenido.
+                </p>
+                <a href="#" class="Card__link">Ver Más</a>
+              </div>
+            </li>
+          </ul>
+        </article>
         <article class="OtherProjects"></article>
         <article class="LetsWork"></article>
       </section>
