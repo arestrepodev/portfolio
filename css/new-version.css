@@ -195,7 +195,7 @@ img {
 
 .Hobbies__list {
   padding: 0;
-  margin: 0;
+  margin: 3rem 0 0 0;
   list-style: none;
 }
 
@@ -222,6 +222,38 @@ img {
   text-decoration: none;
   border-radius: 8px;
   font-size: 1rem;
+}
+
+.gallery-cell {
+  width: 80%; /* full width */
+  height: 360px; /* height of carousel */
+  margin: 0 10px;
+  padding: 1rem;
+}
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #333;
+}
+.flickity-button:hover {
+  background: #f90;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -25px;
+}
+.flickity-prev-next-button.next {
+  right: -25px;
 }
 
 /* Media Queries */
